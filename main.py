@@ -1,5 +1,5 @@
 import numpy
-import random
+#import random
 
 def printMaze( myMaze ) :  
   for row in range(0,myMaze.shape[0]):    
@@ -31,8 +31,8 @@ def initMaze( myMaze, gap) :
 # --------------- main section --------------------
 if __name__ == "__main__":
   rows=int(input("Number of Rows:\n"))
-  #columns = int(input("Number of Columns:\n"))
-  columns = rows
+  columns = int(input("Number of Columns:\n"))
+  #columns = rows
   gapSize=int(input("Size of gap between inner and outer walls:\n"))
   strArray=numpy.full((rows,columns),"",dtype=str)# 
   initMaze(strArray,gapSize)
